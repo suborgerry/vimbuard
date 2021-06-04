@@ -133,10 +133,18 @@
     }
 
     .world-security .container .world-security-middle {
-        top: 27% !important;
+        top: 22% !important;
     }
 
     .globe-earth img {
         right: 7px;
     }
+}
+
+@media (max-width: 370px) {
+
+    .world-security .container .world-security-middle {
+        top: 27% !important;
+    }
+
 }
