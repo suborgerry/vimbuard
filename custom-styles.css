@@ -124,7 +124,19 @@
     }
 
     .info-data.tagline-medium.right {
-        top: -9em;
+        top: -14em;
     }
 
+    .hero-left-amoeba .hero-amoeba img {
+        width: inherit;
+        min-width: inherit;
+    }
+
+    .world-security .container .world-security-middle {
+        top: 27% !important;
+    }
+
+    .globe-earth img {
+        right: 7px;
+    }
 }
