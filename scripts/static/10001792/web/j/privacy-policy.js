@@ -1,0 +1,2 @@
+!function(){"use strict";var a=setInterval(function(){if(window.location.hash){var b=window.location.hash;$("html, body").animate({scrollTop:$(b).offset().top},1500,"swing")}clearInterval(a)},100)}();
+//# sourceMappingURL=privacy-policy.js.map

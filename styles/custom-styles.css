@@ -1,0 +1,160 @@
+.avast-logo img {
+    width: auto;
+}
+
+.hero-amoeba {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.hero-left-amoeba .hero-amoeba img {
+    /* width: 575px !important; */
+    height: auto !important;
+}
+
+.awards__item-logo img {
+    width: auto !important;
+    height: auto !important;
+}
+
+.ultimate-offer .media-container.container.inverse {
+    border-radius: 0px 50px 50px 50px;
+}
+
+.world-security {
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(0deg, #0C053E 0%, #1D1361 100%) !important;
+}
+
+.info-data.tagline-medium.left {
+    top: -10em;
+    position: relative;
+}
+
+.globe-earth {
+    border-radius: 50%;
+    display: block;
+    padding: 35px;
+    margin-top: 12%;
+    width: 50%;
+    height: 50%;
+    max-width: 557px;
+    max-height: 557px;
+    position: relative;
+}
+
+.world-security .container .world-security-middle {
+    top: 59% !important
+}
+
+.globe-earth-round {
+    padding: 35px;
+    background-image: url(../images/rounds.png);
+    background-repeat: round;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.globe-earth-round.rotate {
+    animation: rotate-ring 5s ease;
+}
+
+.globe-earth img {
+    width: 503px;
+    height: 487px;    
+    position: relative;
+    right: 22px;
+}
+
+.info-data.tagline-medium.right {
+    top: 10em;
+    position: relative;
+}
+
+.hero-left-amoeba .hero-amoeba {
+    top: 0rem;
+}
+
+@media (min-width: 992px) and (max-width: 1599.98px) {
+    .hero-left-amoeba .hero-amoeba img {
+        width: 100% !important;
+    }
+}
+
+@keyframes rotate-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    };
+}
+
+@media (max-width: 1090px) {
+    .globe-earth {
+        width: 321px;
+        height: 321px;
+    }
+
+    .globe-earth img {
+        height: 243px;
+        width: 251px;
+    }
+
+    .world-security .container .world-security-middle {
+        top: 20% !important;
+        min-height: 100px;
+        position: absolute;
+    }
+
+    .info-data.tagline-medium.left {
+        top: 6em;
+    }
+
+    .info-data.tagline-medium.right {
+        top: -6em;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .world-security .container .world-security-middle {
+        top: 24% !important;
+    }
+
+    .info-data.tagline-medium.left {
+        top: 11em;
+    }
+
+    .info-data.tagline-medium.right {
+        top: -14em;
+    }
+
+    .hero-left-amoeba .hero-amoeba img {
+        width: inherit;
+        min-width: inherit;
+    }
+
+    .world-security .container .world-security-middle {
+        top: 22% !important;
+    }
+
+    .globe-earth img {
+        right: 7px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .world-security .container .world-security-middle {
+        top: 27% !important;
+    }
+
+}
