@@ -1,3 +1,0 @@
-.hero{background-size:cover}@media (max-width: 575.98px){.hero{background-image:url("../../../../../i/v2/aim/bg/smb/pages/support/hero@2x.jpg?width=600&fcwidth=600")}}@media (min-width: 576px) and (max-width: 991.98px){.hero{background-image:url("../../../../../i/v2/aim/bg/smb/pages/support/hero@2x.jpg?width=1000&fcwidth=1000")}}@media (min-width: 992px){.hero{background-image:url("../../../../../i/v2/aim/bg/smb/pages/support/hero@2x.jpg?width=1600")}}.hero-breadcrumbs.inverse{background-color:transparent}
-
-/*# sourceMappingURL=business-support.css.map */
