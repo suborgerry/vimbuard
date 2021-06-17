@@ -1,3 +1,7 @@
+* {
+    transition: all ease 0.3s;
+}
+
 .vim-logo img {
     width: auto;
 }
@@ -50,7 +54,7 @@
 
 .globe-earth-round {
     padding: 35px;
-    background-image: url(../images/rounds.png);
+    background-image: url('/images/rounds.png');
     background-repeat: round;
     height: 100%;
     width: 100%;
@@ -77,6 +81,677 @@
 
 .hero-left-amoeba .hero-amoeba {
     top: 0rem;
+}
+
+/* Product page */
+.product_banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: url('/images/bgbanner.png');
+    background-size: cover;
+    background-position: center;
+    padding: 46px;
+    gap: 28px;
+}
+
+.product_banner_left {
+    max-width: 648px;
+    max-height: 471px;
+    display: flex;
+    margin-left: 18px;
+}
+
+.product_banner_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_banner_title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.product_banner_text {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: normal;
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+.product_banner_trust {
+    display: flex;
+    align-items: center;
+}
+
+.product_banner_trust_text {
+    margin: 0;
+    color: #FFF;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.product_banner_button {
+    display: flex;
+    background: #44ED9C;
+    box-shadow: 0px 20px 40px rgba(68, 237, 156, 0.2);
+    border-radius: 36px;
+    color: #10147C;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    max-width: 250px;
+    padding: 17px 0;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 24px
+}
+
+.product_banner_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 40px rgba(67, 237, 156, 0.4);
+}
+
+.product_banner_button:focus {
+    background: #3ACA85;
+    outline: 0;
+    border: 0;
+}
+
+.product_banner_button::after {
+    content: url('/images/rowgirht.png');
+    margin-left: 20px;
+}
+
+.product_banner_also {
+    font-size: 16px;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+.product_banner_also span {
+    border-bottom: 1px dashed #FFFFFF;
+}
+
+.product_secvices {
+    background: #E2DCFF;
+    border-radius: 0px 0px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 110px;
+}
+
+.product_secvices_item {
+    display: flex;
+    width: 50%;
+    margin-bottom: 14px;
+}
+
+.product_secvices_item_image {
+    margin-right: 20px;
+}
+
+.product_secvices_item_about {
+    max-width: 490px;
+}
+
+.product_secvices_item_about_title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.2rem;
+}
+
+.product_secvices_item_about_text {
+    font-size: 14px
+}
+
+.laureats {
+    padding: 100px 110px;
+    padding-bottom: 200px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.laureats_left {
+    display: flex;
+    align-items: flex-start;
+}
+
+.laureats_left img {
+    position: relative;
+    top: 40px;
+    z-index: 9;
+}
+
+.laureats_right {
+    background: url('/images/clak.png');
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.laureats_right .laureats_item:nth-child(1) {
+    position: relative;
+    left: -20px;
+}
+
+.laureats_right .laureats_item:nth-child(2) {
+    position: relative;
+    top: 50px;
+}
+
+.laureats_right .laureats_item:nth-child(3) {
+    position: relative;
+    left: 20px;
+    top: 80px;
+}
+
+.laureats_item {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(11, 7, 61, 0.1);
+    border-radius: 10px;
+    height: 178px;
+    width: 366px;
+    padding: 32px;
+    display: flex;
+}
+
+.laureats_item_righ {
+    margin-left: 20px;
+}
+
+.laureats_item_year {
+    font-size: 30.6207px;
+    color: #10147C;
+    margin: 0;
+    line-height: 37px;
+}
+
+.laureats_item_title {
+    font-size: 30.6207px;
+    line-height: 37px;
+    color: #10147C;
+}
+
+.product_comeon {
+    background: url('/images/come.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 65px 0;
+}
+
+.product_comeon_text {
+    font-size: 36px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFF;
+    max-width: 900px;
+    margin: auto;
+}
+
+.products_rewiew {
+    padding: 100px
+}
+
+.products_rewiew_title {
+    text-align: center;
+    font-size: 46px;
+}
+
+.products_rewiew .carousel-slider {
+    padding-top: 0
+}
+
+.products_rewiews_line {
+    display: flex;
+}
+
+.products_rewiews_line_item {
+    width: 278px;
+    height: 339px;
+}
+
+.products_rewiews_line_item::before {
+    content: url('/images/quotes.png');
+    position: absolute;
+    right: 0;
+}
+
+.products_rewiews_line_item_title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.products_rewiews_line_item_rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.products_rewiews_line_item .products_rewiews_line_item_rating img {
+    width: 20px;
+    height: 19px;
+}
+
+.products_rewiews_line_item_tex {
+    color: #2A3145
+}
+
+.products_rewiews_person {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.products_rewiews_line_item .products_rewiews_person img {
+    width: 33px;
+    height: 33px;
+}
+
+.products_rewiews_line_item .products_rewiews_person span {
+    color: #2A3145;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.products_rewiews_line.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+.products_rewiews_line.owl-carousel .owl-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.products_rewiews_line.owl-carousel .owl-nav button {
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products_rewiews_line.owl-carousel .owl-nav button span {
+    font-size: 40px;
+    position: relative;
+}
+
+.products_rewiews_line.owl-carousel .owl-nav button.owl-prev {
+    background: #fff;
+    border: 1px solid rgba(78, 34, 208, 0.3);
+}
+
+.products_rewiews_line.owl-carousel .owl-nav button.owl-prev span {
+    right: 1px;
+}
+
+.products_rewiews_line.owl-carousel .owl-nav button.owl-next {
+    background: #4E22D0;
+    box-shadow: 0px 10px 30px rgba(78, 34, 208, 0.3);
+}
+
+.products_rewiews_line.owl-carousel .owl-nav button.owl-next span {
+    left: 1px;
+    bottom: 1px;
+    color: #fff;
+}
+
+.products_rewiew_button button {
+    display: flex;
+    background: #44ED9C;
+    box-shadow: 0px 20px 40px rgb(68 237 156 / 20%);
+    border-radius: 36px;
+    color: #10147C;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 250px;
+    padding: 17px 0;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.products_rewiew_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.products_rewiew_button button::after {
+    content: url(/images/rowgirht.png);
+    margin-left: 20px;
+}
+
+.products_rewiew_button button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 40px rgba(67, 237, 156, 0.4);
+}
+
+.products_rewiew_button button:focus {
+    background: #3ACA85;
+    outline: 0;
+    border: 0;
+}
+
+.product_faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product_faq_container {
+    background: #FFFFFF;
+    max-width: 1100px;
+    width: 80%;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 5px 40px 60px rgb(0 0 0 / 15%);
+    overflow-y: hidden;
+}
+
+.product_faq_item {
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    position: relative;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 9;
+}
+
+.product_faq_question {
+    color: #10147C;
+    font-size: 24px;
+    line-height: 29px;
+    padding: 35px 60px;
+    position: relative;
+    z-index: 9;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.product_faq_question:hover {
+    cursor: pointer;
+    color: #4E22D0;
+    box-shadow: 5px 40px 60px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+}
+
+.product_faq_question::after {
+    content: "";
+    background: url('/images/plus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    border: 1px solid #4E22D0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+}
+
+.product_faq_question:hover::after {
+    background-image: url('/images/plushover.png');
+    background-color: #4E22D0;
+    box-shadow: 0px 20px 30px rgba(78, 34, 208, 0.3);
+    transition: all ease 0.3s;
+}
+
+.product_faq_question.active::after {
+    transform: rotate(135deg);
+    background-image: url('/images/plushover.png');
+    background-color: #4E22D0;
+    box-shadow: 15px -20px 30px rgb(78 34 208 / 30%);
+}
+
+.product_faq_answer {
+    margin: 0;
+    padding: 35px 60px;
+    position: relative;
+    z-index: 1;
+    /* display: none; */
+}
+
+.product_howwork {
+    margin-top: 100px;
+    padding: 0 112px;
+}
+
+.product_howwork_header {
+    background: #F8F8FC;
+    border-radius: 50px 50px 0px 0px;
+    padding: 60px 82px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.product_howwork_header_item {
+    display: flex;
+    flex-basis: 37%;
+}
+
+.product_howwork_header_item_image {
+    margin-right: 20px;
+}
+
+.product_howwork_header_item_title {
+    margin-bottom: 0;
+}
+
+.product_howwork_header_item_text {
+    margin-bottom: 0;
+    max-width: 362px;
+}
+
+.product_howwork_main {
+    background: linear-gradient(180deg, #0C053E 2.05%, #261C6A 100.05%), #222161;
+    border-radius: 0px 0px 50px 50px;
+    padding: 60px 81px;
+}
+
+.product_howwork_main_title {
+    font-size: 46px;
+    color: #FFF;
+    text-align: center;
+}
+
+.product_howwork_main_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.product_howwork_main_list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.product_howwork_main_list_item {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    max-width: 433px;
+}
+
+.product_howwork_main_list_item::before {
+    content: "";
+    background: url('/images/howwork/listmarker.png');
+    background-size: cover;
+    display: block;
+    width: 27px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.product_howwork_main_container_about {
+    max-width: 431px;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-style: normal;
+    line-height: 32px;
+}
+
+.product_howwork_main_more_btn {
+    display: flex;
+    background: #44ED9C;
+    box-shadow: 0px 20px 40px rgb(68 237 156 / 20%);
+    border-radius: 36px;
+    color: #10147C;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 250px;
+    padding: 17px 0;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.product_howwork_main_more_btn::after {
+    content: url(/images/rowgirht.png);
+    margin-left: 20px;
+}
+
+.product_howwork_main_more_btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 40px rgb(67 237 156 / 40%);
+}
+
+.product_howwork_main_more_btn:focus  {
+    background: #3ACA85;
+    outline: 0;
+    border: 0;
+}
+
+.product_youdevice {
+    display: flex;
+    justify-content: space-between;
+    padding: 112px;
+}
+
+.product_youdevice_title {
+    font-size: 48px;
+}
+
+.product_youdevice_text {
+    font-size: 18px;
+}
+
+.product_youdevice_text {
+    max-width: 599px;
+}
+
+.product_youdevice_check {
+    display: flex;
+}
+
+.product_youdevice_check img {
+    height: 51px;
+    width: 58px;
+}
+
+.product_youdevice_check span {
+    color: #10147C;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    top: -7px;
+    margin-left: 10px;
+}
+
+.product_youdevice_buybutton {
+    display: flex;
+    background: #44ED9C;
+    box-shadow: 0px 20px 40px rgb(68 237 156 / 20%);
+    border-radius: 36px;
+    color: #10147C;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 250px;
+    padding: 17px 0;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.product_youdevice_buybutton::after {
+    content: url(/images/rowgirht.png);
+    margin-left: 20px;
+}
+
+.product_youdevice_buybutton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 40px rgb(67 237 156 / 40%);
+}
+
+.product_youdevice_buybutton:focus  {
+    background: #3ACA85;
+    outline: 0;
+    border: 0;
+}
+
+.product_youdevice_also {
+    color: #10147C
+}
+
+.product_youdevice_also span {
+    border-bottom: 1px dashed #10147C;
+}
+
+.product_youdevice_right {
+    background: url('/images/clak.png');
+    background-size: 100% 100%;
+    padding: 68px 51px 68px 72px;
+}
+
+.product_slider_privacy_head {
+    padding: 0 112px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.product_slider_privacy_title {
+    max-width: 732px;
+    font-size: 46px;
+    margin-bottom: 0;
+}
+
+.product_slider_privacy_head a span {
+    color: #261C6A;
+    line-height: 24px;
+    border-bottom: 1px solid #261C6A;
+}
+
+.product_slider_privacy_head a::after {
+    content: url('/images/arrowright.png');
+    margin-left: 12px;
 }
 
 @media (min-width: 992px) and (max-width: 1599.98px) {
@@ -121,6 +796,125 @@
     .info-data.tagline-medium.right {
         top: -6em;
     }
+
+    .product_banner {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product_secvices {
+        padding: 50px 60px;
+    }
+
+    .product_howwork_main_container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .product_howwork_header {
+        gap: 20px
+    }
+    
+    .product_howwork_header_item {
+        flex-basis: 48%;
+    }
+    
+    .product_youdevice {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 910px) {
+    .laureats {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .laureats_left {
+        justify-content: center;
+    }
+
+    .laureats_right {
+        justify-content: space-around;
+    }
+
+    .product_faq_question span {
+        max-width: 80%;
+    }
+
+    .product_faq_question {
+        padding-top: 30px;
+    }
+
+    .product_howwork_header_item {
+        flex-basis: 100%;
+    }
+
+    .product_howwork_main {
+        padding: 60px 31px;
+    }
+
+    .product_howwork_main_container_right img {
+        width: 100%;
+    }
+
+    .product_slider_privacy_head {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .product_secvices_item {
+        width: 100%;
+    }
+
+    .products_rewiews_line.owl-carousel .owl-nav button {
+        width: 70px;
+        height: 70px;
+    }
+
+    .product_howwork {
+        padding: 0 52px;
+    }
+
+    .product_banner_left img {
+        width: 100%;
+    }
+
+    .product_youdevice {
+        padding: 62px;
+    }
+
+    .product_youdevice_right img {
+        width: 100%;
+    }
+
+    .laureats {
+        padding: 100px 60px;
+    }
+
+    .laureats_left img {
+        width: 100%;
+    }
+
+    .product_comeon_text {
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .product_faq_question {
+        font-size: 15px;
+    }
+
+    .product_howwork_header {
+        padding: 60px 42px;
+    }
+
+    .product_howwork_main_container {
+        padding: 0px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -148,6 +942,60 @@
 
     .globe-earth img {
         right: 7px;
+    }
+
+    .laureats_item_title {
+        font-size: 23.6207px;
+    }
+
+    .laureats_item_year {
+        font-size: 26.6207px;
+    }
+
+    .product_comeon_text {
+        line-height: 60px;
+    }
+
+    .product_faq_container {
+        width: 95%;
+    }
+
+    .product_howwork {
+        padding: 0 20px;
+    }
+
+    .product_howwork_main_list_item::before {
+        /* background-size: 100% 100%; */
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .product_howwork_header {
+        padding: 20px
+    }
+    
+    .product_youdevice {
+        padding: 62px 30px;
+    }
+
+    .product_slider_privacy_head {
+        padding: 0 20px
+    }
+
+    .products_rewiew {
+        padding: 20px;
+    }
+
+    .product_faq_question {
+        padding: 35px 25px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .products_rewiews_line.owl-carousel .owl-nav {
+        flex-direction: row;
+        top: auto;
     }
 }
 

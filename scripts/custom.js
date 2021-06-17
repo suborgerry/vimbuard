@@ -45,3 +45,24 @@ window.avastGlobals.web = {
     }
   }
 };
+
+const faqQuestion = document.querySelector('.product_faq_container');
+if(faqQuestion) {
+  faqQuestion.addEventListener('click', evt => {
+    let item = evt.target.matches('h5') ? evt.target : evt.target.parentElement
+    openQuestion(item);
+  });
+  function openQuestion(item) {
+    let questionContainer = item.parentElement;
+    let answer = questionContainer.querySelector('.product_faq_answer');
+    let answerHeight = answer.clientHeight;
+    let questionContainerHeight = questionContainer.clientHeight;
+    if(questionContainerHeight > 99) {
+      questionContainer.style.height = 99 + 'px';
+      item.classList.remove('active');
+    } else {
+      item.classList.add('active');
+      questionContainer.style.height = questionContainerHeight + answerHeight + 40 + 'px';
+    }
+  };
+}
