@@ -54,7 +54,7 @@
 
 .globe-earth-round {
     padding: 35px;
-    background-image: url('/images/rounds.png');
+    background-image: url('../images/rounds.png');
     background-repeat: round;
     height: 100%;
     width: 100%;
@@ -88,7 +88,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background: url('/images/bgbanner.png');
+    background: url('../images/bgbanner.png');
     background-size: cover;
     background-position: center;
     padding: 46px;
@@ -164,7 +164,7 @@
 }
 
 .product_banner_button::after {
-    content: url('/images/rowgirht.png');
+    content: url('../images/rowgirht.png');
     margin-left: 20px;
 }
 
@@ -231,7 +231,7 @@
 }
 
 .laureats_right {
-    background: url('/images/clak.png');
+    background: url('../images/clak.png');
     display: flex;
     flex-wrap: wrap;
     background-position: center;
@@ -283,7 +283,7 @@
 }
 
 .product_comeon {
-    background: url('/images/come.jpg');
+    background: url('../images/come.jpg');
     background-position: center;
     background-size: cover;
     padding: 65px 0;
@@ -322,7 +322,7 @@
 }
 
 .products_rewiews_line_item::before {
-    content: url('/images/quotes.png');
+    content: url('../images/quotes.png');
     position: absolute;
     right: 0;
 }
@@ -507,7 +507,7 @@
 
 .product_faq_question::after {
     content: "";
-    background: url('/images/plus.png');
+    background: url('../images/plus.png');
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
@@ -520,7 +520,7 @@
 }
 
 .product_faq_question:hover::after {
-    background-image: url('/images/plushover.png');
+    background-image: url('../images/plushover.png');
     background-color: #4E22D0;
     box-shadow: 0px 20px 30px rgba(78, 34, 208, 0.3);
     transition: all ease 0.3s;
@@ -528,7 +528,7 @@
 
 .product_faq_question.active::after {
     transform: rotate(135deg);
-    background-image: url('/images/plushover.png');
+    background-image: url('../images/plushover.png');
     background-color: #4E22D0;
     box-shadow: 15px -20px 30px rgb(78 34 208 / 30%);
 }
@@ -606,7 +606,7 @@
 
 .product_howwork_main_list_item::before {
     content: "";
-    background: url('/images/howwork/listmarker.png');
+    background: url('../images/howwork/listmarker.png');
     background-size: cover;
     display: block;
     width: 27px;
@@ -737,7 +737,7 @@
 }
 
 .product_youdevice_right {
-    background: url('/images/clak.png');
+    background: url('../images/clak.png');
     background-size: 100% 100%;
     padding: 68px 51px 68px 72px;
 }
@@ -762,12 +762,12 @@
 }
 
 .product_slider_privacy_head a::after {
-    content: url('/images/arrowright.png');
+    content: url('../images/arrowright.png');
     margin-left: 12px;
 }
 
 .buy_main_choose {
-    background: url('/images/family.jpg');
+    background: url('../images/family.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0;
@@ -1020,7 +1020,7 @@
 .confirm_popup_container_info::before {
     content: "";
     display: block;
-    background: url('/images/securepaymentline.png');
+    background: url('../images/securepaymentline.png');
     width: 19px;
     height: 20px;
     position: relative;
@@ -1118,7 +1118,7 @@
 }
 
 .confirm_popup_container_button::after {
-    content: url('/images/rowgirht.png');
+    content: url('../images/rowgirht.png');
     margin-left: 20px;
 }
 
@@ -1129,7 +1129,7 @@ input.error_confirm {
 
 input.error_confirm::after {
     content: "";
-    background: url('/images/error.png');
+    background: url('../images/error.png');
     width: 20px;
     height: 20px;
 }
@@ -1163,7 +1163,7 @@ input.error_confirm::after {
 .saccefull_payment_title::before {
     content: "";
     display: block;
-    background: url('/images/ckechk-circle.png');
+    background: url('../images/ckechk-circle.png');
     width: 40px;
     height: 40px;
 }
@@ -1225,7 +1225,7 @@ input.error_confirm::after {
 }
 
 .saccefull_payment_container_button::after {
-    content: url('/images/rowgirht.png');
+    content: url('../images/rowgirht.png');
     margin-left: 20px;
 }
 
