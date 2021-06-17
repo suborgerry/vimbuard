@@ -65,4 +65,61 @@ if(faqQuestion) {
       questionContainer.style.height = questionContainerHeight + answerHeight + 40 + 'px';
     }
   };
+};
+
+const buyContainer = document.querySelector('.buy_main_choose_items');
+const popupBilling = document.querySelector('#confirm-popup');
+if(buyContainer) {
+  buyContainer.addEventListener('click', evt => {
+    let elementTarget = evt.target;
+    if(elementTarget.matches('.buy_main_choose_item_buybutton')) {
+      openBilling();
+    };
+  });
+  
+  function openBilling() {
+    popupBilling.style.display = "flex";
+    setTimeout(() => { popupBilling.style.opacity = 1; }, 150);  
+  }
+};
+
+if(popupBilling) {
+  popupBilling.addEventListener('click', evt => {
+    if(evt.target.matches('.confirm_popup')) {
+      popupBilling.style.opacity = 0;
+      setTimeout(() => { popupBilling.style.display = "none"; }, 400); 
+    }
+  });
+}
+
+const saccefullPayment = document.querySelector('#saccefull-payment');
+if(saccefullPayment && popupBilling) {
+  let confirmButton = document.querySelector('.confirm_popup_container_button');
+  confirmButton.addEventListener('click', openSaccesfull);
+
+  saccefullPayment.addEventListener('click', evt => {
+    if(evt.target.matches('.confirm_popup')) {
+      saccefullPayment.style.opacity = 0;
+      setTimeout(() => { saccefullPayment.style.display = "none"; }, 400); 
+    }
+  });
+
+  function openSaccesfull() {
+    popupBilling.style.opacity = 0;
+    setTimeout(() => { popupBilling.style.display = "none"; }, 400); 
+
+    setTimeout(() => { saccefullPayment.style.opacity = 1; }, 400); 
+    saccefullPayment.style.display = "flex";
+  };
+
+  let activateButton = document.querySelector('.saccefull_payment_container_button');
+  activateButton.addEventListener('click', () => {
+    saccefullPayment.style.opacity = 0;
+    setTimeout(() => { saccefullPayment.style.display = "none"; }, 400);
+    
+    window.open(
+      '#',
+      '_blank'
+    );
+  })
 }
