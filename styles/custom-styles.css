@@ -1067,6 +1067,7 @@
 .confirm_popup_container_price {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 0;
 }
 
 .confirm_popup_container_price_text {
