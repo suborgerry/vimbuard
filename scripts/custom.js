@@ -122,4 +122,31 @@ if(saccefullPayment && popupBilling) {
       '_blank'
     );
   })
+};
+
+const menuBlog = document.querySelector('#blog-menu');
+if (menuBlog) {
+  menuBlog.addEventListener('click', evt => {
+    let element = evt.target;
+    if(element.matches('li')) {
+      openArticlesCategory(element.id);
+    } else if(element.parentElement.matches('li')) {
+      openArticlesCategory(element.parentElement.id);
+    }
+  });
+
+  function openArticlesCategory(tagId) {    
+    let allBlogs = document.querySelectorAll('.blog_articles_item');
+    allBlogs.forEach(element => {
+      if(tagId === 'all_blogs') {
+        element.style.display = "block";
+      } else {
+        if(!element.classList.contains(tagId)) {
+          element.classList.toggle("hidden");
+        } else {
+          element.classList.toggle("active");
+        }
+      }
+    });
+  }
 }
