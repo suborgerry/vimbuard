@@ -150,3 +150,47 @@ if (menuBlog) {
     });
   }
 }
+
+const articleInputs = document.querySelector('.article_main_section_checkblock');
+if(articleInputs) {
+
+  const inputContainers = articleInputs.querySelectorAll('p');
+
+  inputContainers.forEach(inputContainer => {
+    if(inputContainer.classList.contains('disabled')) {
+      let input = inputContainer.querySelector('input');
+      input.disabled = true;
+    }
+  });
+
+  articleInputs.addEventListener('click', evt => {
+    if(evt.target.matches('p')) {
+      checkToggle(evt.target)
+    } else if(evt.target.parentElement.matches('p')) {
+      checkToggle(evt.target.parentElement)
+    } else if(evt.target.parentElement.parentElement.matches('p')) {
+      checkToggle(evt.target.parentElement.parentElement)
+    }
+  });
+
+  function checkToggle(check) {
+    let input = check.querySelector('input');
+    if(input.type === "checkbox") {
+      check.classList.toggle('checked');
+      input.checked = !input.checked
+    } else if(input.type === "radio") {
+      input.checked = !input.checked;
+
+      let radios = document.querySelectorAll('.article_main_section_radio');
+      radios.forEach(radioContainer => {
+        let radio = radioContainer.querySelector('input');
+        if(!radio.checked) {
+          radioContainer.classList.remove('checked');
+        } else {
+          radioContainer.classList.add('checked');
+        }
+      });
+    }
+  }
+}
+
