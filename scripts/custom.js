@@ -79,7 +79,9 @@ if(buyContainer) {
   
   function openBilling() {
     popupBilling.style.display = "flex";
-    setTimeout(() => { popupBilling.style.opacity = 1; }, 150);  
+    setTimeout(() => { popupBilling.style.opacity = 1; }, 150);
+    
+    document.body.classList.toggle('hidden_scrollbar');
   }
 };
 
@@ -88,6 +90,7 @@ if(popupBilling) {
     if(evt.target.matches('.confirm_popup')) {
       popupBilling.style.opacity = 0;
       setTimeout(() => { popupBilling.style.display = "none"; }, 400); 
+      document.body.classList.toggle('hidden_scrollbar');
     }
   });
 }
@@ -194,3 +197,27 @@ if(articleInputs) {
   }
 }
 
+const languageContainer = document.querySelector('#language-container');
+
+function toggleLanguage() {
+    languageContainer.addEventListener('click', evt => {
+        let container = evt.target.parentElement;
+        if (container.classList.contains('open')) {
+            openLanguage(evt.target);
+            container.classList.remove('open');
+            let img  = document.querySelector('#language-img');
+            let lang = evt.target.dataset.lang;
+            img.setAttribute('src', 'images/countries/' + lang + '.jpg');
+        } else if(evt.target.matches('button')) {
+            container.classList.toggle('open');
+        }
+    });
+    
+    function openLanguage(button) {
+        let container =  button.parentElement;
+        let selected  = container.removeChild(button);
+        container.prepend(selected);
+    }
+}
+
+languageContainer && toggleLanguage();
