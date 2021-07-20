@@ -68,7 +68,7 @@ body.hidden_scrollbar::-webkit-scrollbar {
 }
 
 .globe-earth-round.rotate {
-    animation: rotate-ring 5s ease;
+    animation: rotate-ring ease 5s;
 }
 
 .globe-earth img {
