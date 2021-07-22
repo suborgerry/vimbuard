@@ -990,6 +990,14 @@ body.hidden_scrollbar::-webkit-scrollbar {
     flex-basis: 100%;
 }
 
+.confirm_popup_container_billing_inputs #billing-company-name {
+    flex-basis: 100%;
+}
+
+.confirm_popup_container_billing_inputs #billing-job-title {
+    flex-basis: 100%;
+}
+
 .confirm_popup_container_billing_inputs #billing-country {
     flex-basis: 65%;
 }
