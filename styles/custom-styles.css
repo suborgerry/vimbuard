@@ -998,6 +998,29 @@ body.hidden_scrollbar::-webkit-scrollbar {
     flex-basis: 100%;
 }
 
+.confirm_popup_container_billing_inputs #billing-phone-container {
+    flex-basis: 100%;
+    background: #F3F3F3;
+    padding: 0 27px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.confirm_popup_container_billing_inputs #billing-phone-container select {
+    border: none;
+    background: none;
+}
+
+.confirm_popup_container_billing_inputs #billing-phone-container select:focus {
+    border: none;
+    outline: none;
+}
+
+.confirm_popup_container_billing_inputs #billing-phone-container input {
+    padding-left: 0;
+    width: 100%;
+}
+
 .confirm_popup_container_billing_inputs #billing-country {
     flex-basis: 65%;
 }
